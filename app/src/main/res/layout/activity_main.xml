@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Hello World!"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="200dp"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:text="Stop"
+        android:background="@drawable/buttonback"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnStart" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="200dp"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonback"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnStop"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edInputTime"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="110dp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:hint="Enter time"
+        android:background="@drawable/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
